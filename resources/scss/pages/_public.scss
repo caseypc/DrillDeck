@@ -1,0 +1,7 @@
+.dd-public-nav { background: var(--dd-surface); border-bottom: 1px solid var(--dd-outline); }
+.dd-public-main { min-height: calc(100vh - 160px); }
+.dd-hero { padding: 3rem 0 4rem; }
+.dd-hero h1 { letter-spacing: -.055em; }
+.dd-preview { background: var(--dd-surface); border: 1px solid var(--dd-outline); border-radius: 1rem; padding: 1.35rem; box-shadow: var(--dd-soft-shadow); }
+.dd-preview-line { background: var(--dd-surface-muted); border: 1px solid var(--dd-outline); border-radius: .7rem; padding: .85rem; margin-top: .75rem; }
+.dd-feature-icon { width: 3rem; height: 3rem; background: $feature-icon-bg; color: $feature-icon-color; border-radius: .75rem; display: inline-grid; place-items: center; }

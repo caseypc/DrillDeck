@@ -1,0 +1,20 @@
+// Webpixels-inspired reusable stats, responsive tables, forms and list patterns.
+.card { border-color: var(--dd-outline); border-radius: $card-radius; background: var(--dd-surface); box-shadow: var(--dd-soft-shadow); }
+.card-header { border-bottom-color: var(--dd-outline); }
+.dd-stat-card .card-body { padding: 1.25rem 1.35rem; }
+.dd-stat-icon { display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: .65rem; background: $stat-icon-bg; color: $stat-icon-color; }
+.dd-stat-value { color: var(--dd-heading); font-size: 2rem; letter-spacing: -.04em; line-height: 1.2; font-weight: 750; }
+.dd-panel-title { font-size: 1rem; font-weight: 700; margin: 0; }
+.dd-table-card .table { --bs-table-bg: transparent; --bs-table-color: var(--bs-body-color); margin: 0; }
+.dd-table-card .table thead th { color: var(--bs-secondary-color); font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .065em; padding: 1rem 1.15rem; white-space: nowrap; border-bottom-color: var(--dd-outline); }
+.dd-table-card .table tbody td { padding: 1rem 1.15rem; border-bottom-color: var(--dd-outline); vertical-align: middle; }
+.dd-table-card .table tbody tr:last-child td { border-bottom: none; }
+.dd-list-group .list-group-item { padding: 1rem 1.2rem; background: transparent; border-color: var(--dd-outline); }
+.dd-person-icon { width: 2.45rem; height: 2.45rem; border-radius: .65rem; background: var(--dd-surface-muted); color: var(--dd-heading); display: inline-grid; place-items: center; font-weight: 700; flex: none; }
+.form-label { font-size: .84rem; font-weight: 650; }
+.form-control,.form-select { border-color: var(--dd-outline); background-color: var(--dd-surface); min-height: 42px; }
+.form-control:focus,.form-select:focus { border-color: $form-focus-border; box-shadow: $form-focus-shadow; }
+.btn { font-weight: 600; }
+.btn-primary { --bs-btn-bg: #{$theme-primary}; --bs-btn-border-color: #{$theme-primary}; --bs-btn-hover-bg: #{$theme-primary-hover}; --bs-btn-hover-border-color: #{$theme-primary-hover}; --bs-btn-active-bg: #{$theme-primary-active}; --bs-btn-active-border-color: #{$theme-primary-active}; }
+.dd-section-eyebrow { font-size: .72rem; color: $theme-primary; text-transform: uppercase; letter-spacing: .11em; font-weight: 750; }
+[data-bs-theme="dark"] .btn-outline-secondary { --bs-btn-color: #{$outline-secondary-color-dark}; --bs-btn-border-color: #{$outline-secondary-border-dark}; }

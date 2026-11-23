@@ -1,0 +1,79 @@
+// Bootstrap overrides. Keep these before the Bootstrap import in app.scss.
+// Change $primary to update Bootstrap controls and the custom theme together.
+$white: #fff;
+$black: #000;
+$primary: #5b95eb;
+$secondary: #525252;
+$success: #16a34a;
+$info: #0dcaf0;
+$warning: #ea580c;
+$danger: #dc2626;
+$light: #f5f5f5;
+$dark: #171717;
+$body-bg: #fafafa;
+$body-color: $secondary;
+$border-color: #e5e5e5;
+$body-bg-dark: #131313;
+$body-color-dark: #d4d4d4;
+$body-secondary-bg-dark: #262626;
+$body-tertiary-bg-dark: #222222;
+$border-color-dark: #404040;
+$body-emphasis-color-dark: $white;
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", sans-serif;
+$border-radius: .75rem;
+$border-radius-lg: 1rem;
+$card-border-color: $border-color;
+$card-cap-bg: transparent;
+$box-shadow-sm: 0 1px 2px rgba($black, .05);
+
+// Custom theme colors. Components inherit the primary unless overridden here.
+$theme-primary: $primary;
+$theme-on-primary: $white;
+$theme-primary-hover: darken($theme-primary, 8%);
+$theme-primary-active: darken($theme-primary, 16%);
+$theme-primary-soft: rgba($theme-primary, .1);
+$theme-surface: $white;
+$theme-surface-muted: $light;
+$theme-heading: $dark;
+$theme-outline: $border-color;
+$theme-soft-shadow: 0 1px 3px rgba($black, .07);
+$theme-surface-dark: #191919;
+$theme-surface-muted-dark: #202020;
+$theme-heading-dark: $light;
+$theme-outline-dark: #343434;
+$theme-soft-shadow-dark: 0 1px 3px rgba($black, .2);
+
+// Shell and reusable components.
+$sidebar-width: 260px;
+$sidebar-link-active: $theme-primary;
+$sidebar-link-active-bg: rgba($sidebar-link-active, .11);
+$brand-mark-bg: $theme-heading;
+$brand-mark-bg-dark: $theme-primary;
+$brand-mark-color: $theme-on-primary;
+$workspace-icon-bg: $theme-primary;
+$avatar-bg: $theme-primary;
+$display-icon-bg: $theme-primary-soft;
+$display-icon-color: $theme-primary;
+$stat-icon-bg: $theme-primary-soft;
+$stat-icon-color: $theme-primary;
+$feature-icon-bg: $theme-primary-soft;
+$feature-icon-color: $theme-primary;
+$form-focus-border: $theme-primary;
+$form-focus-shadow: 0 0 0 .2rem rgba($theme-primary, .14);
+$outline-secondary-color-dark: #ddd;
+$outline-secondary-border-dark: #555;
+$content-padding: 2rem;
+$content-padding-mobile: 1.2rem;
+$card-radius: $border-radius-lg;
+
+// Workspace-specific colors and dimensions.
+$workspace-heading-color: $theme-on-primary;
+$workspace-heading-gradient-start: $theme-heading;
+$workspace-heading-gradient-end: $theme-primary;
+$workspace-heading-gradient-angle: 110deg;
+$kanban-column-width: 320px;
+$kanban-column-width-desktop: 300px;
+$fitting-diagram-bg: #141a21;
+$fitting-diagram-color: #eaf3fc;
+$fitting-diagram-border: #3d4756;
+$fitting-diagram-muted: #9fb0c4;

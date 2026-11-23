@@ -1,0 +1,29 @@
+:root, [data-bs-theme="light"] {
+  --dd-surface-muted: #{$theme-surface-muted};
+  --dd-surface: #{$theme-surface};
+  --dd-heading: #{$theme-heading};
+  --dd-outline: #{$theme-outline};
+  --dd-sidebar-width: #{$sidebar-width};
+  --dd-soft-shadow: #{$theme-soft-shadow};
+}
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --bs-body-bg: #{$body-bg-dark};
+  --bs-body-color: #{$body-color-dark};
+  --bs-secondary-bg: #{$body-secondary-bg-dark};
+  --bs-tertiary-bg: #{$body-tertiary-bg-dark};
+  --bs-border-color: #{$border-color-dark};
+  --bs-emphasis-color: #{$body-emphasis-color-dark};
+  --dd-surface-muted: #{$theme-surface-muted-dark};
+  --dd-surface: #{$theme-surface-dark};
+  --dd-heading: #{$theme-heading-dark};
+  --dd-outline: #{$theme-outline-dark};
+  --dd-soft-shadow: #{$theme-soft-shadow-dark};
+}
+body { min-width: 320px; color: var(--bs-body-color); background: var(--bs-body-bg); }
+h1,h2,h3,h4,h5,h6 { color: var(--dd-heading); letter-spacing: -.018em; }
+a { text-underline-offset: .16em; }
+.text-secondary { color: var(--bs-secondary-color) !important; }
+.bg-light, .text-bg-light { background: var(--dd-surface-muted) !important; color: var(--dd-heading) !important; }
+.display-icon { display: inline-grid; place-items: center; width: 2.7rem; height: 2.7rem; border-radius: .8rem; background: $display-icon-bg; color: $display-icon-color; }
+:focus-visible { outline: 2px solid var(--bs-primary); outline-offset: 2px; }

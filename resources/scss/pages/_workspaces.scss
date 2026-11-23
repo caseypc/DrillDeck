@@ -1,0 +1,59 @@
+.kanban-scroller { overflow-x: auto; padding-bottom: 1rem; -webkit-overflow-scrolling: touch; }
+.kanban-track { display: flex; align-items: flex-start; gap: 1rem; min-height: 50vh; }
+.kanban-column { flex: 0 0 min(82vw, $kanban-column-width); border-radius: 1rem; background: var(--dd-surface-muted); padding: .8rem; }
+.kanban-list { min-height: 90px; }
+.order-ticket { cursor: grab; touch-action: manipulation; border: 1px solid var(--bs-border-color); }
+.order-ticket:active { cursor: grabbing; }
+.sortable-ghost { opacity: .5; }
+.display-icon { display: inline-grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: .8rem; background: $display-icon-bg; color: $display-icon-color; }
+@media (min-width: 992px) { .kanban-column { flex-basis: $kanban-column-width-desktop; } }
+
+
+/* Drilling workspace: compact inspector at left, photo and grip reference at right. */
+.drilldeck-workspace-heading {
+    color: $workspace-heading-color;
+    background: linear-gradient($workspace-heading-gradient-angle, $workspace-heading-gradient-start, $workspace-heading-gradient-end);
+}
+.drilldeck-workspace-editor .card,
+.drilldeck-workspace-media .card {
+    border-color: var(--bs-border-color);
+}
+.drilldeck-workspace-editor h3.text-primary {
+    letter-spacing: .015em;
+}
+.drilldeck-workspace-editor .form-control,
+.drilldeck-workspace-editor .form-select {
+    font-variant-numeric: tabular-nums;
+}
+.drilldeck-grip-reference {
+    border-color: var(--bs-border-color);
+}
+.drilldeck-grip-reference svg {
+    max-height: 490px;
+    width: 100%;
+}
+.catalog-drag-handle,
+.column-drag-handle {
+    touch-action: none;
+    user-select: none;
+    cursor: grab;
+}
+.catalog-drag-handle:active,
+.column-drag-handle:active { cursor: grabbing; }
+.kanban-list,
+#workflow-sort,
+[data-catalog-list] { min-height: 48px; }
+.fitting-diagram {
+    background: $fitting-diagram-bg;
+    color: $fitting-diagram-color;
+    border: 1px solid $fitting-diagram-border;
+}
+.fitting-diagram .text-secondary { color: $fitting-diagram-muted !important; }
+.fitting-diagram svg { width: 100%; }
+@media (min-width: 1200px) {
+    .drilldeck-workspace-media { position: sticky; top: 5.5rem; }
+}
+@media print {
+    .dd-header, .dd-sidebar, .btn, form, .kanban-scroller, .catalog-drag-handle { display: none !important; }
+    .card, .drilldeck-grip-reference { box-shadow: none !important; print-color-adjust: exact; }
+}
